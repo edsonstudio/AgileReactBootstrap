@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import NavBar from './ui/NavBar';
-import Home from './container/Home';
+import { render } from 'react-dom';
 
-function App() {
-  const logo = 'DevDeck101'
-  return (
-    <div className="container">
-        <NavBar logo={logo}/>
-        <Home />
-    </div>
-  );
+class App extends Component {
+  render() {
+    const logo = 'DevDeck101'
+    return (
+      <div className="container">
+          <NavBar logo={logo} />
+          {this.props.children}
+      </div>
+    );
+  }
 }
 
 export default App;
