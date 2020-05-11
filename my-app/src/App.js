@@ -7,8 +7,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h2>React & DevDeck101</h2>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Aqui está o nosso primeiro componente.
         </p>
         <a
           className="App-link"
